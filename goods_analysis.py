@@ -7,5 +7,4 @@ def goods_analysis(*l, in_sale=None):
         elif 'молоко' in i['название'].lower():
             p.append(i)
     p.sort(key=lambda i: i['цена'])
-    s = list({'0', '1', '2'})
-    return p[int(s[0])], p[int(s[1])], p[int(s[2])]
+    return p[2], p[1], p[0]
